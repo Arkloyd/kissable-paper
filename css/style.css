@@ -7,6 +7,12 @@ img {
   height: auto;
 }
 
+.author, time {
+  display: block;
+  text-align: right;
+  margin-right: 1em;
+}
+
 #page {
   background-color: #eee; }
   #page header {
@@ -97,7 +103,9 @@ img {
         text-align: center;
         margin: 0;
         padding: 0; }
-  #page #main {}
+  #page #main {
+    width: 1000px;
+    margin: 0 auto; }
     #page #main #front-page {}
       #page #main #front-page nav {
         float: right;
@@ -132,3 +140,53 @@ img {
       #page #main #front-page article .byline {
         padding: 0 1em 0 16em;
       }
+
+      #page #main #cards {}
+        #page #main #cards #card-articles {
+          float: left;
+          width: 69%;
+        }
+        #page #main #cards #card-articles .hentry {
+          height: 100%;
+          padding: 1em 0 1em 1em;
+          margin-top: 1em;
+          border: 1px solid #999;
+          box-shadow: 0 0.3em 0.2em #aaa;
+        }
+
+        #page #main #cards #card-articles .hentry .entry-title {
+          font-size: 1.75em;
+          border-bottom: 1px solid;
+          margin-top: 0;
+          padding-top: 0;
+        }
+
+        #page #main #cards #card-articles .hentry figure {
+          width: 23%;
+          float: left;
+        }
+
+        #page #main #cards #card-articles .hentry .entry-content {
+          padding: 0 1em 1em 11em;
+        }
+
+        #page #main #cards #card-articles .hentry time {
+          clear: both;
+        }
+
+    #page #main #cards aside {
+      width: 28%;
+      height: 100%;
+      float: right;
+    }
+     
+    #page #main #cards aside .widget {
+      margin-top: 1em;
+      padding: 1em 0 1em 1em;
+      border: 1px solid #999;
+      box-shadow: 0 0.3em 0.2em #aaa;
+    }
+
+    #page footer {
+      clear: both;
+    }
