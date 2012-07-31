@@ -2,12 +2,19 @@
 
 body {}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 #page {
   background-color: #eee; }
   #page header {
     clear: both;
     background-color: #111;
-    border-bottom: 2px solid #999;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0.3em 0.2em #666;
+    margin-bottom: 0.75em;
     width: 100%;
     height: 3.5em; }
     #page header hgroup {
@@ -71,6 +78,7 @@ body {}
     height: 6em;
     width: 100%;
     padding: 0.5em 0;
+    box-shadow: 0 0.3em 0.2em #aaa;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #999; }
     #page #running-board hgroup {
@@ -89,3 +97,38 @@ body {}
         text-align: center;
         margin: 0;
         padding: 0; }
+  #page #main {}
+    #page #main #front-page {}
+      #page #main #front-page nav {
+        float: right;
+        width: 27%;
+        height: 100%;
+      }
+      #page #main #front-page article {
+        width: 72.9%;
+        height: 100%;
+        padding: 1em 0 1em 1em;
+        margin-top: 1em;
+        border: 1px solid #999;
+        box-shadow: 0 0.3em 0.2em #aaa;
+      }
+      #page #main #front-page article figure {
+        width: 25%;
+        float: left;
+      }
+
+      #page #main #front-page article h1 {
+        border-bottom: 1px solid;
+      }
+
+      #page #main #front-page article .entry-content {
+        padding: 1em 1em 1em 16em;
+      }
+
+      #page #main #front-page article time {
+        padding: 0 1em 0 1em;
+      }
+
+      #page #main #front-page article .byline {
+        padding: 0 1em 0 16em;
+      }
