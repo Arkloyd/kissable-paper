@@ -109,11 +109,20 @@ img {
     #page #main #front-page {}
       #page #main #front-page nav {
         float: right;
-        width: 27%;
+        width: 18.5%;
         height: 100%;
       }
+
+      #front-page nav ul {
+        width: 100%;
+      }
+
+      #front-page nav ul li {
+        display: block;
+        width: 100%;
+      }
       #page #main #front-page article {
-        width: 72.9%;
+        width: 80%;
         height: 100%;
         padding: 1em 0 1em 1em;
         margin-top: 1em;
@@ -121,8 +130,12 @@ img {
         box-shadow: 0 0.3em 0.2em #aaa;
       }
       #page #main #front-page article figure {
-        width: 25%;
+        width: 30%;
         float: left;
+      }
+
+      #front-page article figure figcaption {
+        display: none;
       }
 
       #page #main #front-page article h1 {
@@ -130,21 +143,29 @@ img {
       }
 
       #page #main #front-page article .entry-content {
-        padding: 1em 1em 1em 16em;
+        padding: 0 1em 1em 17em;
+      }
+
+      article .entry-content p {
+        margin-top: 0;
       }
 
       #page #main #front-page article time {
         padding: 0 1em 0 1em;
+        font-size: 0.6em;
       }
 
       #page #main #front-page article .byline {
-        padding: 0 1em 0 16em;
+        padding: 0 1em 0 1em;
+        font-size: 0.6em;
       }
 
-      #page #main #cards {}
+      #page #main #cards {
+      }
         #page #main #cards #card-articles {
           float: left;
-          width: 69%;
+          width: 74.7%;
+          margin-bottom: 1em;
         }
         #page #main #cards #card-articles .hentry {
           height: 100%;
@@ -162,31 +183,49 @@ img {
         }
 
         #page #main #cards #card-articles .hentry figure {
-          width: 23%;
+          width: 30%;
           float: left;
         }
 
+        #card-articles .hentry figure figcaption {
+          display: none;
+        }
+
         #page #main #cards #card-articles .hentry .entry-content {
-          padding: 0 1em 1em 11em;
+          padding: 0 1em 1em 15em;
         }
 
         #page #main #cards #card-articles .hentry time {
           clear: both;
+          font-size: 0.6em;
+        }
+
+        #page #main #cards #card-articles .hentry .byline {
+          font-size: 0.6em;
         }
 
     #page #main #cards aside {
-      width: 28%;
+      width: 23%;
       height: 100%;
       float: right;
     }
      
     #page #main #cards aside .widget {
       margin-top: 1em;
-      padding: 1em 0 1em 1em;
+      padding: 1em 1em 1em 1em;
       border: 1px solid #999;
       box-shadow: 0 0.3em 0.2em #aaa;
     }
 
     #page footer {
       clear: both;
+      background-color: black;
+      color: #999;
+    }
+
+    #page footer p {
+      text-align: center;
+      line-height: 3em;
+      margin-top: 1em;
+      font-size: 0.75em;
     }
