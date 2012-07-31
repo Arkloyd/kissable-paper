@@ -20,6 +20,7 @@ body {}
         font-size: 2em;
         line-height: 1em;
         margin-left: 1em;
+        border-bottom: 1px solid #999;
         color: #eee; }
         #page header hgroup h1 span {
           font-weight: bold;
@@ -30,32 +31,38 @@ body {}
         font-size: 1.1em;
         line-height: 1em;
         margin-left: 5em;
-        color: #999; }
+        color: #eee; }
   #page nav {}
     #page nav ul {
       margin-left: 2em;
       display: inline; 
+      border-bottom: 1px solid #999;
       float: left; }
       #page nav ul li {
         font-size: 1.1em;
         margin-right: 0.5em;
-        line-height: 2.3em;
+        line-height: 2em;
         display: inline; }
         #page nav ul li a {
-          color: #eee;
+          color: #999;
           text-decoration: none;
         }
     #page nav #social-networks {
       float: right; 
       display: inline; }
-      #page nav #social-networks a {
+      #page nav #social-networks .in {
+        display: inline-block;
+        border-bottom: 1px solid #999;
+      }
+      #page nav #social-networks .in a {
         font-size: 1.1em;
-        color: #eee;
+        color: #999;
         text-decoration: none;
         margin-right: 0.5em;
-        line-height: 2.3em; }
+        line-height: 2em; }
       #page nav #social-networks form {
-        margin-left: 1em;
+        margin-left: 2em;
+        margin-right: 1em;
         display: inline; }
         #page nav #social-networks form input {}
   #page #running-board {
@@ -64,6 +71,7 @@ body {}
     height: 6em;
     width: 100%;
     padding: 0.5em 0;
+    border-top: 1px solid #ccc;
     border-bottom: 1px solid #999; }
     #page #running-board hgroup {
       width: 50%;
