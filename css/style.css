@@ -46,17 +46,17 @@ img {
         margin-left: 5em;
         color: #eee; }
   #page nav {}
-    #page nav ul {
+    #page header nav ul {
       margin-left: 2em;
       display: inline; 
       border-bottom: 1px solid #999;
       float: left; }
-      #page nav ul li {
+      #page header nav ul li {
         font-size: 1.1em;
         margin-right: 0.5em;
         line-height: 2em;
         display: inline; }
-        #page nav ul li a {
+        #page header nav ul li a {
           color: #999;
           text-decoration: none;
         }
@@ -109,7 +109,7 @@ img {
     #page #main #front-page {}
       #page #main #front-page nav {
         float: right;
-        width: 18.5%;
+        width: 18%;
         height: 100%;
       }
 
@@ -120,6 +120,15 @@ img {
       #front-page nav ul li {
         display: block;
         width: 100%;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        border-bottom: 1px solid #999;
+      }
+
+      #front-page nav ul li a {
+        text-decoration: none;
+        line-height: 2em;
+        font-size: 1.1em;
       }
       #page #main #front-page article {
         width: 80%;
