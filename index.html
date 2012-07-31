@@ -4,6 +4,20 @@
   <meta charset="utf-8" />
 
   <title>sevvie.net</title>
+
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="sevvie.net" />
+  <meta name="twitter:description" content="An experiment in web design and development, for the purpose of communicating well with data." />
+  <meta name="twitter:image" content="img/new-years-2000.jpg" />
+  <meta name="twitter:url" content="http://sevvie.net/" />
+
+  <!-- Facebook Open Graph Data -->
+  <meta name="og:title" content="sevvie.net" />
+  <meta name="og:type" content="website" />
+  <meta name="og:image" content="img/sevvienet.png" />
+  <meta name="og:url" content="http://sevvie.net/" />
+
 </head>
 <body>
   <div id="page">
@@ -44,38 +58,56 @@
             <li><a href="#">changelog</a></li>
           </ul>
         </nav>
-        <article>
-          <h1>The Semantic Web Data Experiment</h1>
+        <article class="hentry" itemscope itemtype="http://schema.org/Article">
+          <h1 class="entry-title" itemprop="name">The Semantic Web Data Experiment</h1>
           <figure>
-            <img src="img/new-years-2000.jpg" />
+            <img src="img/new-years-2000.jpg" itemprop="image" />
             <figcaption>An empty image</figcaption>
           </figure>
-          <p>This page, and all its HTML and CSS, were written by hand, not
-            generated. I don't actually know how much the additional classes
-            and metadata will add to the weight of the page, so the one way
-            to find out was this.</p>
+          <div class="entry-content" itemprop="description">
+            <p>This page, and all its HTML and CSS, were written by hand, not
+              generated. I don't actually know how much the additional classes
+              and metadata will add to the weight of the page, so the one way
+              to find out was this.</p>
+          </div>
+          <time class="updated" datetime="2012-07-30 19:03:12-0800" pubdate itemprop="datePublished">30 Jul 2012, 19:03</time>
+          <div class="author byline vcard">
+            <span class="fn" itemprop="author">Jennie '7' Evers-Corvina</span>
+          </div>
         </article>
       </section>
 
       <section id="cards">
         <div id="card-articles">
-          <article>
-            <h1>A Titled Example</h1>
+          <article class="hentry" itemscope itemtype="http://schema.org/CreativeWork">
+            <h1 class="entry-title" itemprop="name">A Titled Example</h1>
             <figure>
-              <img src="img/tiananmen-square-1989.jpg" />
+              <img src="img/tiananmen-square-1989.jpg" itemprop="image" />
               <figcaption>The Caption for this full-featured card</figcaption>
             </figure>
-            <p>This is merely an example of a card. I will add cards of more
-              substance, as the design is fleshed out and the microdata/
-              microformats are added to the HTML. Wish me luck!</p>
+            <div class="entry-content">
+              <p>This is merely an example of a card. I will add cards of more
+                substance, as the design is fleshed out and the microdata/
+                microformats are added to the HTML. Wish me luck!</p>
+            </div>
+            <time class="updated" datetime="2012-07-30 19:03:12-0800" pubdate itemprop="datePublished">30 Jul 2012, 19:03</time>
+            <div class="author byline vcard">
+              <span class="fn" itemprop="author">Jennie '7' Evers-Corvina</span>
+            </div>
           </article>
-          <article>
+          <article class="hentry" itemscope itemtype="http://schema.org/CreativeWork">
             <figure>
-              <img src="img/dr-mlk-1964.jpg" />
+              <img src="img/dr-mlk-1964.jpg" itemprop="image" />
             </figure>
-            <p>This is another card example; unlike the one above it, it does
-              not have a title, nor a caption for its image. It's more like
-              a short message.</p>
+            <div class="entry-content">
+              <p>This is another card example; unlike the one above it, it does
+                not have a title, nor a caption for its image. It's more like
+                a short message.</p>
+            </div>
+            <time class="updated" datetime="2012-07-30 19:03:12-0800" pubdate itemprop="datePublished">30 Jul 2012, 19:03</time> 
+            <div class="author byline vcard">
+              <span class="fn" itemprop="author">Jennie '7' Evers-Corvina</span>
+            </div>
           </article>
         </div>
         <aside>
